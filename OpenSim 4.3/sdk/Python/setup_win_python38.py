@@ -2,7 +2,8 @@
 import sys
 import os
 import fileinput
-if (sys.version_info.major == 3 and sys.version_info.minor >= 8 and sys.platform.startswith('win')):
+# if (sys.version_info.major == 3 and sys.version_info.minor >= 8 and sys.platform.startswith('win')):
+if (sys.version_info.major == 3 and sys.version_info.minor >= 8):
    install_path = os.path.abspath('../../bin')
    new_path = install_path.replace(os.sep, '/')
    print ('install path found as '+ new_path)
